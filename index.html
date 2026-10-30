@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<h1>Patrick</h1>
+
+<p>Patrick is a programmer.</p>
+
+<p>Backend and systems work covers the bills. What really holds his attention is offensive security and malware development. He didn't plan it, it isn't a phase, and the interest keeps getting deeper.</p>
+
+<p>His language is C, most of the time.</p>
+
+<h2>Notes</h2>
+
+{% if site.posts.size > 0 %}
+<ul class="posts">
+  {% for post in site.posts %}
+  <li>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="empty">Nothing here yet.</p>
+{% endif %}

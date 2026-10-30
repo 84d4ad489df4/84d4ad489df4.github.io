@@ -1,0 +1,17 @@
+# Replace with your alias's GitHub username
+url: "https://84d4ad489df4.github.io"
+baseurl: ""
+
+title: Patrick
+description: Systems code, offensive security, and notes from the lower layers.
+author: Patrick
+
+permalink: /posts/:title/
+plugins:
+  - jekyll-feed
+
+feed:
+  path: feed.xml
+
+exclude:
+  - README.md
